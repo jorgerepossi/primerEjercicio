@@ -1,6 +1,5 @@
 /*============================[Modulos]============================*/
 import express from "express";
-import cookieParser from "cookie-parser";
 import session from "express-session";
 import bodyParser from "body-parser";
 import exphbs from "express-handlebars";
@@ -11,7 +10,6 @@ const app = express();
 /*============================[Middlewares]============================*/
 
 /*----------- Session -----------*/
-app.use(cookieParser());
 app.use(
   session({
     secret: "pepe",
